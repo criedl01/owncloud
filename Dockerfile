@@ -5,7 +5,7 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
  && docker-php-ext-install gd \
  && docker-php-ext-install zip \
  && docker-php-ext-install pdo_mysql intl
-RUN wget -O /tmp/owncloud.tar.bz2 https://download.owncloud.org/community/owncloud-10.0.8.tar.bz2
+RUN wget -O /tmp/owncloud.tar.bz2 https://download.owncloud.org/community/owncloud-10.0.9.tar.bz2
 RUN mkdir -p /srv
 WORKDIR /srv
 RUN tar xjf /tmp/owncloud.tar.bz2
